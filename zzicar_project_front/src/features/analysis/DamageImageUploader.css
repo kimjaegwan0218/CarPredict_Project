@@ -1,0 +1,33 @@
+.damage-photo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 6px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.damage-photo-item:hover {
+  background-color: #fafafa;
+}
+
+.damage-photo-label {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.damage-photo-status {
+  font-size: 14px;
+  color: #00c7fe;
+  font-weight: 700;
+}
+
+.damage-mini-preview {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #eee;
+}

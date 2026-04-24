@@ -1,0 +1,122 @@
+/* src/styles/Home.css */
+:root {
+  --bg-soft: #f9fbfc;      /* 아주 연한 베이지그레이 (배경) */
+  --mint-light: #e0f2f1;   /* 연한 민트 (제조사 헤더) */
+  --mint-main: #80cbc4;    /* 중간 민트 (제조사 활성화) */
+  --lavender-light: #f3e5f5; /* 연한 보라 (모델 헤더) */
+  --lavender-main: #b39ddb;  /* 중간 보라 (모델 활성화) */
+  --navy-point: #001f3f;   /* 팀원들과의 접점 (버튼) */
+  --text-dark: #2d3436;
+}
+
+.home-container {
+  background-color: var(--bg-soft);
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Pretendard', sans-serif;
+  color: var(--text-dark);
+}
+
+/* 필터 섹션: 민트와 연보라의 조화 */
+.filter-box:first-child { /* 제조사 박스 */
+  border: 1.5px solid var(--mint-main);
+}
+
+.filter-box:last-child { /* 모델 박스 */
+  border: 1.5px solid var(--lavender-main);
+}
+
+.filter-header {
+  padding: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 제조사 헤더는 민트 */
+.filter-box:first-child .filter-header {
+  background-color: var(--mint-light);
+  color: #00695c;
+  border-bottom: 1px solid var(--mint-main);
+}
+
+/* 모델 헤더는 연보라 */
+.filter-box:last-child .filter-header {
+  background-color: var(--lavender-light);
+  color: #512da8;
+  border-bottom: 1px solid var(--lavender-main);
+}
+
+.filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-list li {
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+}
+
+/* 활성화 상태: 각각 민트와 보라로 구분 */
+.filter-box:first-child .filter-list li.active {
+  background-color: var(--mint-main);
+  color: white;
+}
+
+.filter-box:last-child .filter-list li.active {
+  background-color: var(--lavender-main);
+  color: white;
+}
+
+/* 히스토리 카드 디자인 */
+.history-card {
+  background: white;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card-top-bar {
+  height: 6px;
+  /* 카드마다 민트/보라 번갈아가며 포인트 (혹은 혼합) */
+  background-color: var(--mint-main); 
+}
+
+/* 짝수 번째 카드는 보라색 줄로 포인트 */
+.history-card:nth-child(even) .card-top-bar {
+  background-color: var(--lavender-main);
+}
+
+.report-btn {
+  background-color: white;
+  color: var(--navy-point);
+  border: 1.5px solid var(--navy-point);
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.report-btn:hover {
+  background-color: var(--navy-point);
+  color: white;
+}
+
+/* 페이징 중앙 정렬 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.pagination-btn.active {
+  background-color: var(--lavender-main); /* 페이징은 보라색으로 포인트 */
+  border-color: var(--lavender-main);
+  color: white;
+}

@@ -1,0 +1,171 @@
+.upload-card {
+  max-width: 560px;
+  margin: 30px auto;
+  padding: 36px 28px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-family: "Pretendard", -apple-system, sans-serif;
+}
+
+.upload-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.upload-subtitle {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.input-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.text-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.text-input:focus {
+  border-color: #00c7fe;
+  box-shadow: 0 0 8px rgba(0, 199, 254, 0.15);
+}
+
+.car-image-box {
+  width: 100%;
+  height: 220px;
+  border: 2px dashed #d8eaf3;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fafcff;
+}
+
+.car-image-placeholder {
+  color: #00c7fe;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.car-main-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-list {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0 24px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.photo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 6px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.photo-item:hover {
+  background-color: #fafafa;
+}
+
+.photo-label {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.photo-status {
+  font-size: 14px;
+  color: #00c7fe;
+  font-weight: 700;
+}
+
+.mini-preview {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+.mileage-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.mileage-input {
+  padding-right: 48px;
+}
+
+.mileage-unit {
+  position: absolute;
+  right: 16px;
+  color: #999;
+  font-weight: 700;
+}
+
+.socar-btn {
+  width: 100%;
+  padding: 18px;
+  background: #00c7fe;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 199, 254, 0.2);
+  transition: all 0.2s;
+  margin-top: 16px;
+}
+
+.socar-btn:hover {
+  background: #00b5e6;
+  transform: translateY(-1px);
+}
+
+.socar-btn:disabled {
+  background-color: #d9d9d9;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.error-text {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-weight: 600;
+}

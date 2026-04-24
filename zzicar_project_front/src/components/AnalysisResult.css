@@ -1,0 +1,295 @@
+/* AnalysisResult.css */
+
+.result-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.result-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* 파손 등급 카드 */
+.grade-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  text-align: left;
+}
+
+.grade-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.grade-label {
+  font-size: 15px;
+  color: #888;
+  font-weight: bold;
+}
+
+.grade-number {
+  font-size: 36px;
+  font-weight: 900;
+  color: #333;
+  line-height: 1;
+}
+
+.grade-number span {
+  font-size: 18px;
+  color: #ccc;
+  font-weight: bold;
+}
+
+.grade-visual-area {
+  margin-bottom: 15px;
+}
+
+.grade-bar-bg {
+  background: #f1f3f5;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.grade-bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 1s ease-out, background-color 0.5s ease;
+}
+
+.grade-markers {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #adb5bd;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.grade-desc {
+  font-size: 15px;
+  color: #495057;
+  line-height: 1.5;
+  margin: 0;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.grade-desc strong {
+  color: #212529;
+  font-size: 16px;
+}
+
+/* 차량 정보 카드 */
+.vehicle-info-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+  border-left: 5px solid #00c8ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.car-badge {
+  background: #00c8ff;
+  color: white;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.car-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.vehicle-specs {
+  font-size: 14px;
+  color: #666;
+}
+
+.car-number {
+  margin-top: 6px;
+  font-weight: bold;
+  color: #adb5bd;
+}
+
+/* 분석 상세 내역 카드 */
+.result-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-subtitle {
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.analysis-item {
+  margin-bottom: 20px;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* 신규: 부위 이름과 심각도 뱃지를 가로로 예쁘게 정렬 */
+.part-info-group {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.part-name {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 15px;
+}
+
+/* 신규: 심각도 1~5단계 뱃지 스타일 */
+.severity-badge {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: white;
+}
+
+.severity-badge.level-1 { background-color: #3b82f6; } /* 1단계: 미세 (파랑) */
+.severity-badge.level-2 { background-color: #10b981; } /* 2단계: 경미 (초록) */
+.severity-badge.level-3 { background-color: #f59e0b; } /* 3단계: 중간 (주황) */
+.severity-badge.level-4 { background-color: #ef4444; } /* 4단계: 심각 (빨강) */
+.severity-badge.level-5 { background-color: #7f1d1d; } /* 5단계: 치명적 (검붉은색) */
+
+.damage-info {
+  text-align: right;
+}
+
+.damage-type {
+  font-size: 13px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.loss-amount {
+  font-weight: bold;
+  color: #ff4d4f;
+  font-size: 15px;
+}
+
+.progress-bg {
+  background: #eee;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.progress-bar.warning { background-color: #ff4d4f; }
+.progress-bar.safe { background-color: #00c8ff; }
+
+.confidence-text {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  color: #adb5bd;
+}
+
+/* 최종 요약 박스 */
+.summary-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.summary-item.loss {
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+.summary-item.total {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.final-price {
+  color: #00c8ff;
+  font-size: 24px;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}
+
+.reset-btn {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  padding: 18px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reset-btn:hover {
+  background-color: #555;
+}
+
+.history-toggle-btn {
+  background-color: #48CFC9; /* 지원이가 픽한 민트색! */
+  color: white;
+  border: none;
+  padding: 15px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%; /* 버튼 꽉 차게 */
+  box-shadow: 0 4px 10px rgba(72, 207, 201, 0.3);
+}

@@ -1,0 +1,101 @@
+.result-card-wrap {
+  max-width: 560px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.result-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.result-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.06);
+}
+
+.result-section + .result-section {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.result-badge {
+  display: inline-block;
+  background: #00c7fe;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.vehicle-name {
+  font-size: 24px;
+  font-weight: 900;
+  color: #222;
+  margin: 0 0 8px;
+}
+
+.vehicle-meta {
+  color: #888;
+  font-size: 14px;
+  margin: 0;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.result-row.minus {
+  color: #ff4d4f;
+}
+
+.result-row.final {
+  margin-top: 8px;
+  padding-top: 14px;
+  border-top: 1px solid #ececec;
+  font-size: 20px;
+  font-weight: 900;
+  color: #00c7fe;
+}
+
+.summary-text {
+  margin: 0;
+  line-height: 1.7;
+  color: #555;
+  font-size: 15px;
+}
+
+.result-image-box {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.result-image-box img {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+}
